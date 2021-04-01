@@ -18,3 +18,23 @@
         return HttpResponseRedirect('/')
  ```
  
+  ## Login Form(views.py)
+ ```
+ def login_view(request):
+    if not request.user.is_authenticated:
+        if request.method == "POST":
+            form = AuthenticationForm(request=request, data=request.POST)
+            if form.is_valid():
+                name = form.cleaned_data['username']
+                passwd = form.cleaned_data['password']
+                user = authenticate(username=name, password=passwd)
+                if user is not None:
+                    login(request, user)
+                    messages.add_message(request, messages.INFO, 'You logged in successfully.')
+                    return HttpResponseRedirect('/dashboard/')
+        else:
+            form = AuthenticationForm()
+        return render(request, 'forms/login.html', {'form': form, 'name': request.user})
+    else:
+        return HttpResponseRedirect('/')
+ ```
