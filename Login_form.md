@@ -48,3 +48,20 @@ def logout_view(request):
     else:
         return HttpResponseRedirect('/login/')
 ```
+
+## Change Password(views.py)
+```
+def changed_password(request):
+    if request.user.is_authenticated:
+        if request.method == "POST":
+            form = PasswordChangeForm(user=request.user, data=request.POST)
+            if form.is_valid():
+                form.save()
+                update_session_auth_hash(request, user=form.user)
+                return HttpResponseRedirect('/')
+        else:
+            form = PasswordChangeForm(user=request.user)
+        return render(request, 'forms/password_changed.html', {'form': form})
+    else:
+        return HttpResponseRedirect('/login/')
+```
