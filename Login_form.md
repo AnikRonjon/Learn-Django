@@ -65,3 +65,18 @@ def changed_password(request):
     else:
         return HttpResponseRedirect('/login/')
 ```
+
+## User Profile or Dashboard(views.py)
+```
+def dashboard(request):
+    if request.user.is_authenticated:
+        if request.method == "POST":
+            form = EditDashboard(request.POST, instance=request.user)
+            if form.is_valid():
+                form.save()
+        else:
+            form = EditDashboard(instance=request.user)
+        return render(request, 'forms/dashboard.html', {'form': form, 'name': request.user})
+    else:
+        return HttpResponseRedirect('/login/')
+```
