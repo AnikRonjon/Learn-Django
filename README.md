@@ -6,9 +6,9 @@ Django Packages
 
 | Key       | Value                                  |
 | ----------| -------------------------------------- |
-| Version:  | 4.0.0                                  |
+| Package:  | https://djangopackages.org/packages/p/social-app-django/  |
 | Web:      | https://python-social-auth.readthedocs.io/en/latest/ |
-| Download: | https://pypi.org/project/social-auth-app-django/   |
+| PyPi      | https://pypi.org/project/social-auth-app-django/   |
 | Source:   | https://github.com/python-social-auth/social-app-django |
 
 ---
@@ -17,9 +17,9 @@ Django Packages
 
 | Key       | Value                                  |
 | ----------| -------------------------------------- |
-| Version:  | 3.12.4                                 |
+| Package:  | https://djangopackages.org/packages/p/django-rest-framework/  |
 | Web:      | https://www.django-rest-framework.org/ |
-| Download: | https://pypi.org/project/djangorestframework/   |
+| PyPi      | https://pypi.org/project/djangorestframework/   |
 | Source:   | https://github.com/encode/django-rest-framework |
 
 ---
@@ -28,9 +28,9 @@ Django Packages
 
 | Key       | Value                                  |
 | ----------| -------------------------------------- |
-| Version:  | 5.1.0 (sun-harmonics) |
+| Package:  | https://djangopackages.org/grids/g/graphql/  |
 | Web:      | https://docs.graphene-python.org/projects/django/en/latest/ |
-| Download: | https://pypi.org/project/graphene/  |
+| PyPi      | https://pypi.org/project/graphene/  |
 | Source:   | https://github.com/graphql-python/graphene |
 
 ---
@@ -39,9 +39,20 @@ Django Packages
 
 | Key       | Value                                  |
 | ----------| -------------------------------------- |
-| Version:  | 5.1.0 (sun-harmonics) |
+| Package:  | https://djangopackages.org/packages/p/celery/  |
 | Web:      | https://docs.graphene-python.org/projects/django/en/latest/ |
-| Download: | https://pypi.org/project/graphene-django/  |
+| PyPi      | https://pypi.org/project/graphene-django/  |
 | Source:   | https://github.com/celery/celery/ |
+
+---
+
+![Sentry](https://warehouse-camo.ingress.cmh1.psfhosted.org/4c6a7d6ad02ee98714fdf22e632ccee3645f349b/68747470733a2f2f73656e7472792d6272616e642e73746f726167652e676f6f676c65617069732e636f6d2f73656e7472792d6c6f676f2d626c61636b2e706e67)
+
+| Key       | Value                                  |
+| ----------| -------------------------------------- |
+| Package:  | https://djangopackages.org/packages/p/sentry/  |
+| Web:      | https://docs.sentry.io/platforms/python/guides/django/ |
+| PyPi      | https://pypi.python.org/pypi/sentry  |
+| Source:   | https://github.com/getsentry/sentry |
 
 
