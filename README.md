@@ -2,7 +2,7 @@ Django Packages
 
 ---
 
-![SocialAuth](https://user-images.githubusercontent.com/66874940/120894371-db52bc00-c639-11eb-9305-a3c8eadda52d.png)
+![image](https://user-images.githubusercontent.com/66874940/120903859-7fecf200-c66a-11eb-9a7d-06a68a182596.png)
 
 | Key       | Value                                  |
 | ----------| -------------------------------------- |
@@ -35,6 +35,17 @@ Django Packages
 
 ---
 
+![Selenium](https://www.selenium.dev/images/selenium_logo_large.png)
+
+| Key       | Value                                  |
+| ----------| -------------------------------------- |
+| Package:  | https://djangopackages.org/packages/p/selenium/ |
+| Web:      | https://www.selenium.dev/selenium/docs/api/py/api.html |
+| PyPi      | https://pypi.python.org/pypi/selenium  |
+| Source:   | https://github.com/SeleniumHQ/selenium |
+
+---
+
 ![Celery](http://docs.celeryproject.org/en/latest/_images/celery-banner-small.png)
 
 | Key       | Value                                  |
@@ -46,7 +57,18 @@ Django Packages
 
 ---
 
-![Sentry](https://warehouse-camo.ingress.cmh1.psfhosted.org/4c6a7d6ad02ee98714fdf22e632ccee3645f349b/68747470733a2f2f73656e7472792d6272616e642e73746f726167652e676f6f676c65617069732e636f6d2f73656e7472792d6c6f676f2d626c61636b2e706e67)
+![Celery](http://docs.celeryproject.org/en/latest/_images/celery-banner-small.png)
+
+| Key       | Value                                  |
+| ----------| -------------------------------------- |
+| Package:  | https://djangopackages.org/packages/p/gunicorn/ |
+| Web:      | https://docs.gunicorn.org/en/stable/ |
+| PyPi      | https://pypi.python.org/pypi/gunicorn/  |
+| Source:   | https://github.com/benoitc/gunicorn |
+
+---
+
+![Gunicorn](https://docs.gunicorn.org/en/stable/_images/gunicorn.png)
 
 | Key       | Value                                  |
 | ----------| -------------------------------------- |
