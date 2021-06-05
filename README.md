@@ -57,7 +57,7 @@ Django Packages
 
 ---
 
-![Celery](http://docs.celeryproject.org/en/latest/_images/celery-banner-small.png)
+![Gunicorn](https://docs.gunicorn.org/en/stable/_images/gunicorn.png)
 
 | Key       | Value                                  |
 | ----------| -------------------------------------- |
@@ -68,7 +68,7 @@ Django Packages
 
 ---
 
-![Gunicorn](https://docs.gunicorn.org/en/stable/_images/gunicorn.png)
+![Sentry](https://warehouse-camo.ingress.cmh1.psfhosted.org/4c6a7d6ad02ee98714fdf22e632ccee3645f349b/68747470733a2f2f73656e7472792d6272616e642e73746f726167652e676f6f676c65617069732e636f6d2f73656e7472792d6c6f676f2d626c61636b2e706e67)
 
 | Key       | Value                                  |
 | ----------| -------------------------------------- |
