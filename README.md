@@ -77,4 +77,12 @@ Django Packages
 | PyPi      | https://pypi.python.org/pypi/sentry  |
 | Source:   | https://github.com/getsentry/sentry |
 
+---
 
+![ChatterBot](https://warehouse-camo.ingress.cmh1.psfhosted.org/f7e4e0367997a5990b351ec108371cf890e50e98/68747470733a2f2f692e696d6775722e636f6d2f623353436d47542e706e67)
+
+---
+
+![Dj-Strip](https://cdn.discordapp.com/attachments/850707330231697438/850829773005389854/Capture.PNG)
+
+---
