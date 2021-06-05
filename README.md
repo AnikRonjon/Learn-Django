@@ -1,5 +1,18 @@
 Django Packages
 
+---
+
+![SocialAuth](https://user-images.githubusercontent.com/66874940/120894371-db52bc00-c639-11eb-9305-a3c8eadda52d.png)
+
+| Key       | Value                                  |
+| ----------| -------------------------------------- |
+| Version:  | 4.0.0                                  |
+| Web:      | https://python-social-auth.readthedocs.io/en/latest/ |
+| Download: | https://pypi.org/project/social-auth-app-django/   |
+| Source:   | https://github.com/python-social-auth/social-app-django |
+
+---
+
 ![DjangoRestFramework](https://user-images.githubusercontent.com/66874940/120894371-db52bc00-c639-11eb-9305-a3c8eadda52d.png)
 
 | Key       | Value                                  |
