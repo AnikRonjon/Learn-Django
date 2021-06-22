@@ -67,6 +67,22 @@ def changed_password(request):
 ```
 
 ## User Profile or Dashboard(views.py)
+> forms.py
+```
+from django.contrib.auth.forms import UserChangeForm
+
+
+class UserDashboardForm(UserChangeForm):
+    date_joined = forms.DateTimeField(disabled=True)
+    last_login = forms.DateTimeField(disabled=True)
+
+    class Meta:
+        model = User
+        fields = ['username', 'first_name', 'last_name', 'email', 'date_joined', 'last_login']
+        
+```
+
+> views.py
 ```
 def dashboard(request):
     if request.user.is_authenticated:
