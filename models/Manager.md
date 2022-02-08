@@ -4,7 +4,7 @@ Topic covered
 - [Rename Manager](#rename-manager)
 - [Custom Manager](#custom-managers)
     - [Add Extra Manager](#add-extra-manager)
-    - [Add Extra Manager Method](#adding-extra-manager-methods)
+    - [Add Extra Manager Method](#add-extra-manager-methods)
 
 
 A **Manager** is the interface through which database query operations are provided to Django models. At least one **Manager** exists for every model in a Django Application.
@@ -43,9 +43,12 @@ class Book(models.Model):
     objects = models.Manager() # The default manager.
     dahl_objects = DahlBookManager() # The Dahl-specific manager.
 ```
+Work with extra manager `Book.dahl_objects.all()`, `Book.dahl_objects.filter(title='Matilda')`, `Book.dahl_objects.count()`
 
-### Adding extra manager methods
 
+
+
+### Add Extra Manager Methods
 To add extra manager methods create class extend `models.Manager` like so.
 ```
 from django.db import models
@@ -63,9 +66,28 @@ class OpinionPoll(models.Model):
 
 In this `OpinionPoll` class we add a custom manager method named `with_counts`. We can use it `OpinionPoll.objects.with_counts()`.
 
----
 
+### Add Extra Manager & Rename Default Manager
+```
+class AuthorManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(role='A')
 
+class EditorManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(role='E')
 
+class Person(models.Model):
+    first_name = models.CharField(max_length=50)
+    last_name = models.CharField(max_length=50)
+    role = models.CharField(max_length=1, choices=[('A', _('Author')), ('E', _('Editor'))])
+    people = models.Manager()
+    authors = AuthorManager()
+    editors = EditorManager()
+```
+Here we rename `objects` manager to `people` manager and add extra `authors`, `editors` manager.
+`Person.people.all()`
+`Person.authors.all()`
+`Person.editors.all()`
 
 
