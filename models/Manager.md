@@ -1,5 +1,12 @@
 # [Manager](https://docs.djangoproject.com/en/4.0/topics/db/managers/)
 
+Topic covered
+- [Rename Manager](#rename-manager)
+- [Custom Manager](#custom-managers)
+    - [Add Extra Manager](#add-extra-manager)
+    - [Add Extra Manager Method](#adding-extra-manager-methods)
+
+
 A **Manager** is the interface through which database query operations are provided to Django models. At least one **Manager** exists for every model in a Django Application.
 
 ---
@@ -21,6 +28,22 @@ Now your manager is people not objects you can use it like `ClassName.manager.ma
 
 ## Custom Managers
 
+### Add Extra Manager
+To do this  first create class by extend `models.Manager` and inside this class override `get_queryset()` method 
+```
+class DahlBookManager(models.Manager):
+    def get_queryset(self):
+        return super().get_queryset().filter(author='Roald Dahl')
+
+# Then hook it into the Book model explicitly.
+class Book(models.Model):
+    title = models.CharField(max_length=100)
+    author = models.CharField(max_length=50)
+
+    objects = models.Manager() # The default manager.
+    dahl_objects = DahlBookManager() # The Dahl-specific manager.
+```
+
 ### Adding extra manager methods
 
 To add extra manager methods create class extend `models.Manager` like so.
@@ -41,6 +64,7 @@ class OpinionPoll(models.Model):
 In this `OpinionPoll` class we add a custom manager method named `with_counts`. We can use it `OpinionPoll.objects.with_counts()`.
 
 ---
+
 
 
 
