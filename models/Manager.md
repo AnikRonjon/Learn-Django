@@ -14,7 +14,9 @@ class Person(models.Model):
     #...
     people = models.Manager()
 ```
+
 Now your manager is people not objects you can use it like `ClassName.manager`. So for this class `Person.people.all()`, `Person.people.get(**kwargs)`, `Person.people.filter(**kwargs)` etc.
+
 ---
 
 
