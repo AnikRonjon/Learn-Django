@@ -13,3 +13,13 @@
 
 
 ### Field Lookups [...](https://docs.djangoproject.com/en/4.0/ref/models/querysets/#field-lookups)
+   - **syntex** `<field_name>__<field_lookup>`
+   - number `lt, lte, gt, gte, range`
+   - charecter `startswith, istartswith, endswith, iendswith, exact, iexact`
+
+### Aggregation Function [...](https://docs.djangoproject.com/en/4.0/ref/models/querysets/#aggregation-functions)
+   - Min()
+   - Max()
+   - Count()
+   - Sum()
+   - Avg()
